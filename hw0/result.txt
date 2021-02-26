@@ -1,0 +1,65 @@
+model2:
+    Parameters:
+        hidden_size = 1000 
+        num_epochs = 5
+        batch_size = 1000
+        learning_rate = 0.001
+
+    Model:
+        nn.Linear(input_size, hidden_size) 
+        nn.ReLU()
+        nn.Linear(hidden_size, hidden_size)
+        nn.ReLU()
+        nn.Linear(hidden_size, 1)
+        nn.Sigmoid() 
+    
+    Notes:
+        Bag of words implemented by sklearn
+    
+    Error:
+        E_in: 95.1175 %
+        E_val: 86.56 %
+
+model2:
+    Parameters:
+        hidden_size = 1000 
+        num_epochs = 5
+        batch_size = 1000
+        learning_rate = 0.001
+
+    Model:
+        nn.Linear(input_size, hidden_size) 
+        nn.ReLU()
+        nn.Linear(hidden_size, hidden_size)
+        nn.ReLU()
+        nn.Linear(hidden_size, 1)
+        nn.Sigmoid() 
+    
+    Notes:
+        Bag of words implemented by my own
+    
+    Error:
+        E_in: 95.1175 %
+        E_val: 86.56 %
+
+model6:
+    Parameters:
+        hidden_size = 500 
+        num_epochs = 5
+        batch_size = 1000
+        learning_rate = 0.001
+
+    Model:
+        nn.Linear(input_size, hidden_size) 
+        nn.ReLU()
+        nn.Linear(hidden_size, hidden_size)
+        nn.ReLU()
+        nn.Linear(hidden_size, 1)
+        nn.Sigmoid() 
+    
+    Notes:
+        Bag of words implemented by my own
+    
+    Error:
+        E_in: 98.8822 %
+        E_test: 90.42 %
